@@ -1,0 +1,65 @@
+<!--pages/carleaseCA/carleaseCA.wxml-->
+<view class="wrapper">
+  <view class="body">
+    <view class="displaypart">
+      <view class="output-top-box">
+        <view class="output-top-box-content">
+        </view>
+        <view class="MP-box output-top-box-content">
+          <view class="MP-data">{{MonthlyPayment}}</view>
+          <view class="MP-text">Monthly Payment ($)</view>
+          <view class="MP-text">(including taxes)</view>
+        </view>
+        <view class="output-top-box-content">
+          <view class="resetBtn" bindtap="resetBtnClick">
+            <image class="resetBtn-img" src="../../resources/resetBTN.png" animation="{{resetBtnAnimation}}" >清空</image>
+          </view>
+        </view>
+      </view>
+      <view class="output-bot-box">
+        <view class="output-bot-box-content">
+          <view class="output-bot-data">{{FinanceAmount}}</view>
+          <view class="output-bot-text">Amount to Finance ($)</view>
+        </view>
+        <view class="output-bot-box-content">
+          <view class="output-bot-data">{{DeliveryAmount}}</view>
+          <view class="output-bot-text">Amount Due on Delivery ($)</view>
+          <view class="output-bot-text">(including first payment)</view>
+        </view>
+      </view>
+      <view class="warning">*Disclaimer: the above results are for REFERENCE only.</view>
+    </view>
+    <view class="inputpart">
+      <view class="input-part-items">
+        <view class="input-item">
+          <view class="input-title">Total Pre-tax Price ($)</view>
+          <input id="FullPrice" class="input-content" type="digit" value="{{iFullPrice}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter amount"/>
+        </view>
+        <view class="input-item">
+          <view class="input-title">Trade-in ($)</view>
+          <input id="TradeIn" class="input-content" type="digit" value="{{iTradeIn}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter amount"/>
+        </view>
+        <view class="input-item">
+          <view class="input-title">Tax Rate (%)</view>
+          <input id="Tax" class="input-content" type="digit" value="{{iTax}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter percentage"/>
+        </view>
+        <view class="input-item">
+          <view class="input-title">Down Payment ($)</view>
+          <input id="DownPayment" class="input-content" type="digit" value="{{iDownPayment}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter amount"/>
+        </view>
+        <view class="input-item">
+          <view class="input-long-title input-title">Buyout(residual value) ($)</view>
+          <input id="Residual" class="input-content" type="digit" value="{{iResidual}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter amount"/>
+        </view>
+        <view class="input-item">
+          <view class="input-title">Number of Months</view>
+          <input id="Period" class="input-content" type="number" value="{{iPeriod}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter amount"/>
+        </view>
+        <view class="input-last-item input-item">
+          <view class="input-title">Interest Rate (%)</view>
+          <input id="Interest" class="input-content" type="digit" value="{{iInterest}}" bindinput="inputFunction" bindblur="blurCalc" placeholder="Please enter percentage"/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
