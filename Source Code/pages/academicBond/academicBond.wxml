@@ -1,0 +1,42 @@
+<!--pages/academicBond/academicBond.wxml-->
+
+<view class="wrapper">
+  <view class="body">
+    <view class="displaypart">
+      <view class="output-box">
+        <view class="output-box-side">
+        </view>
+        <view class="output-box-mid">
+          <view class="output-result-data">{{resultData}}</view>
+          <view class="output-result-text">{{resultText}}</view>
+        </view>
+        <view class="output-box-side">
+          <view class="resetBtn" bindtap="resetBtnClick">
+            <image class="resetBtn-img" src="../../resources/resetBTN.png">清空</image>
+          </view>
+        </view>
+      </view>
+      <view class="warning">*Disclaimer: the above results are for REFERENCE only.</view>
+    </view>
+    <view class="inputpart">
+      <view class="input-part-items">
+        <view class="input-item">
+          <view class="input-item-text">Face Value($)</view>
+          <input id="FaceValue" class="input-item-content" type="digit" value="{{inputValue}}" bindinput="inputFunction" bindblur="calcFunction" placeholder="Please enter here" />
+        </view>
+        <view class="input-item">
+          <view class="input-item-text">Price Paid($)</view>
+          <input id="PricePaid" class="input-item-content" type="digit" value="{{inputValue}}" bindinput="inputFunction" bindblur="calcFunction" placeholder="Please enter here" />
+        </view>
+        <view class="input-item">
+          <view class="input-item-text">Coupon Rate(%)</view>
+          <input id="CouponRate" class="input-item-content" type="digit" value="{{inputValue}}" bindinput="inputFunction" bindblur="calcFunction" placeholder="Please enter here" />
+        </view>
+        <view class="input-last-item input-item">
+          <view class="input-item-text">Time to Maturity</view>
+          <input id="TimetoMaturity" class="input-item-content" type="number" value="{{inputValue}}" bindinput="inputFunction" bindblur="calcFunction" placeholder="Please enter here" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

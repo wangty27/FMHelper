@@ -1,0 +1,107 @@
+/* pages/academicBond/academicBond.wxss */
+
+page{
+  background: #73689B;
+}
+
+.body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.displaypart{
+  display: flex;
+  flex-direction: column;
+}
+
+.output-box{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.output-box-side{
+  display: flex;
+  height: 250rpx;
+  width: 10%;
+}
+
+.output-box-mid{
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  width: 70%;
+  color: #FFFFFF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.output-result-data{
+  font-size: 70rpx;
+}
+
+.output-result-text{
+  font-size: 30rpx;
+}
+
+.resetBtn{
+  height: 70rpx;
+  width: 70rpx;
+  margin-right: auto;
+  margin-top: auto;
+  display: flex;
+}
+
+.resetBtn-img{
+  height: 45rpx;
+  width: 45rpx;
+  margin: auto;
+}
+
+.warning{
+  margin-top: 15rpx;
+  padding-left: 20rpx;
+  color: #FFFFFF;
+  font-size: 18rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #8174B1;
+}
+
+.inputpart{
+  height: 905rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #F3F4F6;
+}
+
+.input-item{
+  height: 75rpx;
+  padding-left: 20rpx;
+  font-size:  30rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  border-bottom: 2rpx solid #ECECEC;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.input-last-item{
+  border-bottom: 0.01rpx solid #FFFFFF;
+}
+
+.input-item-text{
+  width: 35%;
+  margin-right: 45rpx;
+}
+
+.input-item-content{
+  width: 400rpx;
+  height: 100%;
+  font-size: 30rpx;
+  text-align: right;
+}

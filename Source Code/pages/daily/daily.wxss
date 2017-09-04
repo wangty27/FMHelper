@@ -1,0 +1,73 @@
+/* pages/daily/daily.wxss */
+
+page{
+  background-color: #F3F4F6;
+  background-attachment: fixed;
+}
+
+.navigator-part{
+  height: 100%;
+  width: 93.5%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.navigator-part-content{
+  height: 240rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigator-box{
+  height: 100%;
+  width: 33%;
+  display: flex;
+}
+
+.navigator-box-hover{
+  transform: scale(1.03, 1.03);
+}
+
+.navigator-icon{
+  height: 150rpx;
+  width: 150rpx;
+  margin: auto;
+  border: 3rpx solid rgb(243, 244, 246);
+  border-radius: 30rpx;
+}
+
+.icon-mortcal{
+  background: #F74461;
+}
+
+.icon-carbuyCA{
+  background: #5CA3E1;
+}
+
+.icon-carleaseCA{
+  background: #2F2F2F;
+}
+
+.icon-regularcal{
+  background: #33B332;
+}
+
+.icon-temp{
+  background: #A1A1A1;
+}
+
+
+
+.index-logo-view{
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.index-logo{
+  width: 320rpx;
+  height: 320rpx;
+}

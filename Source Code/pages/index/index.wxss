@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+page{
+  background: #F3F4F6;
+  background-attachment: fixed;
+  overflow-y: auto;
+}
+
+.index-logo-view{
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.index-logo{
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.index-welcome{
+  margin-top: 20rpx;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.intro-box{
+  margin-top: 50rpx;
+}
+
+.intro-content{
+  width: 650rpx;
+  height: 180rpx;
+  margin: auto;
+  background: white;
+  border: 2rpx solid rbga(0, 0, 0, 0);
+  border-radius: 25rpx;
+  display: flex;
+}
+
+.intro-text{
+  font-size: 30rpx;
+  margin: 35rpx 30rpx 20rpx 30rpx;
+}
+
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 16rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  font-size: 20rpx;
+  color: black;
+  text-align: center;
+}
